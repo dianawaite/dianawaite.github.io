@@ -1,0 +1,36 @@
+header, main, footer {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.profile {
+  width: 200px;
+  height: auto;
+  float: right;
+}
+header {
+  width: 700px height: 40px;
+  background-color: #16BAC5;
+  padding: 1rem;
+  border-radius:10px;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  font-size: 40px;
+}
+h2 {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom-width: 700px;
+  border-bottom-color: black;
+}
+footer {
+  width: 700px height: 15px;
+  background-color: #16BAC5;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
