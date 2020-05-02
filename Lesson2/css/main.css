@@ -1,29 +1,36 @@
 
 body {
 	font-size: 16px;
-	font-family: font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
   ;
 }
+header, main, footer {
+	max-width: 700px;
+	margin: 0 auto;
+
+}
 header {
-  width: 767px; height: 60px;
   background-color: #16BAC5;
   padding: 1rem;
   border-radius:10px;
-  position: fixed;
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 
 }
+.webAddress {
+	padding-bottom: 22px;
+	margin-bottom: 10px;
+}
 /* phone or baseline views **************************/
+
+
 main {
-	max-width: 767px;
-	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+	/* font-size: 0.8rem; */
 }
 
 h1 {
-  font-family: font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 main section h2 {
@@ -48,17 +55,12 @@ main section:nth-child(2) {
 	margin: 0.5rem;
 }
 
-.colimage {
-	box-shadow: 0 0 30px #333;
-}
 footer {
-  width: 767px; height: 45px;
   background-color: #16BAC5;
   border-radius: 10px;
   font-size: 12px;
   text-align: center;
   padding: 10px;
-  align: center;
 }
 
 /* Tablet Views ******************************/
