@@ -24,6 +24,10 @@ nav {
 	background-color: #476A6F;
 	text-align: center;
 }
+.navActive {
+	text-decoration: underline;
+	text-shadow: 2px;
+}
 .navigation {
 	display: flex;
 	flex-direction: column;
