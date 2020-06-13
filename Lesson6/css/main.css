@@ -71,7 +71,8 @@ nav ul li a {
 }
 .contact {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align: center;
 	background-color: rgba(164, 172, 158, 0.76)
 }
 footer {
@@ -145,8 +146,6 @@ header img {
 	
 	.weatherSum {
 		position: absolute;
-		display: flex;
-		flex-direction: column;
 		top: 25px;
 		right: 50px;
 		border-width: 2px;
