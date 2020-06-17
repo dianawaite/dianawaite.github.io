@@ -31,19 +31,21 @@
       <ul class="navigation">
         <li><a class="ham" href="#">&#9776; Menu</a></li>
         <li><a href="#">Home</a></li>
-        <li><a class="navActive" href="#">Preston</a></li>
+        <li><a href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
+        <li><a class="navActive" href="#">Storm Center</a></li>
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
     <main>
-      <h2 class="cityName">Storm Tracker</h2>
+      <div><h2 class="cityName">Storm Tracker</h2>
+      <p class="centered">Let us know what the weather is like right now where you are.</p>
+      </div>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
-        <label class="top" for="Full Name">Full Name<input type="text" name="fullname" pattern="(a-z) [(A-Z)].{5}" title="5 or more characters"></label>
+        <label class="top" for="Full Name">Full Name<input type="text" name="fullname" pattern="(\w\w+)\s(\w+)$" title="5 or more characters"></label>
         <label class="top" for="Email">Email<input type="email" id="email" name="email" placeholder="john.doe@gmail.com"></label>
         <label class="top" for="Phone Number">Phone Number*<input type="tel" required></label>
         <label class="top" for="Zip Code">Zip Code*<input type="number" required></label>
@@ -51,7 +53,7 @@
         <fieldset>
         <legend>Storm Information</legend>
         <label class="top" for="Storm Date">Storm Date<input type="date" id="stormdate" name="stormdate"></label>
-        <label class="top" for="stormtypes">Storm Type<input list="stormtypes" name="stormtypes" id="stormtypes"></label>
+        <label class="top" for="stormtype">Storm Type<input list="stormtypes" name="stormtype" id="stormtype"></label>
         <datalist id="stormtypes">
           <option value="Flash Flood"></option>
           <option value="Hail"></option>
