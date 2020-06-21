@@ -45,15 +45,15 @@
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
-        <label class="top" for="Full Name">Full Name<input type="text" name="fullname" pattern="(\w\w+)\s(\w+)$" title="5 or more characters"></label>
-        <label class="top" for="Email">Email<input type="email" id="email" name="email" placeholder="john.doe@gmail.com"></label>
-        <label class="top" for="Phone Number">Phone Number*<input type="tel" required></label>
-        <label class="top" for="Zip Code">Zip Code*<input type="number" required></label>
+        <label class="top">Full Name<input type="text" name="fullname" pattern="(\w\w+)\s(\w+)$" title="5 or more characters"></label>
+        <label class="top">Email<input type="email" id="email" name="email" placeholder="john.doe@gmail.com"></label>
+        <label class="top">Phone Number*<input type="tel" required></label>
+        <label class="top">Zip Code*<input type="number" required></label>
         </fieldset>
         <fieldset>
         <legend>Storm Information</legend>
-        <label class="top" for="Storm Date">Storm Date<input type="date" id="stormdate" name="stormdate"></label>
-        <label class="top" for="stormtype">Storm Type<input list="stormtypes" name="stormtype" id="stormtype"></label>
+        <label class="top">Storm Date<input type="date" id="stormdate" name="stormdate"></label>
+        <label class="top">Storm Type<input list="stormtypes" name="stormtype" id="stormtype"></label>
         <datalist id="stormtypes">
           <option value="Flash Flood"></option>
           <option value="Hail"></option>
@@ -61,21 +61,21 @@
           <option value="Thunderstorm"></option>
           <option value="Tornado"></option>
         </datalist>
-        <label class="top" for="Storm Severity">Storm Severity (between 1-10)</label><input type="range" id="stormseverity" name="stormSeverity" min="1" max="10">
-        <label class="top" for="Storm Region">Storm Region<select id="region" name="region">
+        <label class="top">Storm Severity (between 1-10)</label><input type="range" id="stormseverity" name="stormSeverity" min="1" max="10">
+        <label class="top">Storm Region<select id="region" name="region">
           <option value="">Please Select:</option>
           <option value="Preston">Preston</option>
           <option value="Soda Springs">Soda Springs</option>
           <option value="Fish Haven">Fish Haven</option></select></label>
-        <label class="sbs" for="User in Danger">User In Danger
-          <div><label><input type="radio" name="radio" value="yes"> Yes</label></div>
-          <div><label><input type="radio" name="radio" value="maybe"> Maybe</label></div>
-          <div><label><input type="radio" name="radio" value="no"> No</label></div>
+        <label class="sbs">User In Danger
+          <div><input type="radio" name="radio" value="yes"> Yes</div>
+          <div><input type="radio" name="radio" value="maybe"> Maybe</div>
+          <div><input type="radio" name="radio" value="no"> No</div></label>
       </fieldset>
       <fieldset>
         <legend>Additional Details</legend>
-        <label class="top" for="Additional Info">Additional Information/Comments</label><input type="textarea" rows="10" name="AdditionalInfo"></label> </fieldset>
-        <label class="submitBtn" for="Form Submission"><input type="submit" value="Report Your Storm"></label>
+        <label class="top">Additional Information/Comments<input type="text" name="AdditionalInfo"></label> </fieldset>
+        <label class="submitBtn"><input type="submit" value="Report Your Storm"></label>
      
       </form>
 
@@ -85,12 +85,10 @@
           <h3>Contact Information</h3>
           <p>Address: 30 W Main St, Preston ID 84609<br> Phone: 208-524-9876<br>Email: info@ppweather.com</p>
         </div>
-      </div>
     </main>
     <footer>
       &copy; 2020 | Diana Waite | Attributes
       <p id="date"></p>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

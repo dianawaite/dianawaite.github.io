@@ -26,7 +26,7 @@ nav {
 }
 .navActive {
 	text-decoration: underline;
-	text-shadow: 2px;
+	/*text-shadow: 2rem;*/
 }
 .navigation {
 	display: flex;
@@ -69,7 +69,6 @@ nav ul li a {
 .contact {
 	display: flex;
 	flex-direction: row;
-	align: center;
 	background-color: rgba(164, 172, 158, 0.76)
 }
 footer {
@@ -127,8 +126,8 @@ header img {
   border-style: dashed;
   text-align: center;
 }
-.hero {
-	width: 600px;
+/*.hero {
+	width: 600px;*/
 
 	h2 {text-align: center;
 		font-size:2.5rem;
@@ -153,7 +152,7 @@ header img {
 		box-shadow: 0 0 30px #111;
 		opacity: .8;*/
 	}
-}
+
 #notice {
 	text-align: center;
 	font-size: 1.4em;
@@ -180,7 +179,7 @@ form legend {
 form label.top, form div {
 	display: block;
 	padding-top: 1rem;
-	color: #476A6F
+	color: #476A6F;
 	font-size: .8rem;
 }
 form label.top input, form label.top select {
@@ -224,7 +223,7 @@ textarea {
   .navigation {
 		display: flex;
 		flex-direction: row;
-
+	
 	}
 	.navigation li {
 		display: block; /* change state in small view */
@@ -254,6 +253,6 @@ textarea {
 			display: flex;
 			flex-direction: row;
 		}
-	
+	}
     
   
