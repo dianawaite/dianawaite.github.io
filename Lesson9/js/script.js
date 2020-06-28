@@ -93,58 +93,57 @@ WebFont.load({
     document.getElementById('banner').classList.add('show-banner');
   }
   
-  const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-  
+  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
   fetch(requestURL)
-    .then(response => {
+    .then(function (response) {
       return response.json();
     })
-    .then(jsonObject => {
-      const towns = jsonObject['towns'];
+    .then(function (jsonObject) {
+      //console.table(jsonObject); // temporary checking for valid response and data parsing
+      const towns = jsonObject["towns"];
+      const southern = towns.filter(
+        (town) =>
+          town.name == "Preston" ||
+          town.name == "Fish Haven" ||
+          town.name == "Soda Springs"
+      );
   
-      for (let j = 0; j < towns.length; j++) {
-        const cities = ['Preston', 'Fish Haven', 'Soda Springs'];
+      southern.forEach((town) => {
+        let eachTown = document.createElement("article");
+        let townData = document.createElement("div");
+        let tname = document.createElement("h2");
+        let tmotto = document.createElement("h3");
+        let founded = document.createElement("p");
+        let population = document.createElement("p");
+        let rainfall = document.createElement("p");
+        let image = document.createElement("img");
   
-        if (!cities.includes(towns[j].name)) {
-          continue;
-        }
+        eachTown.appendChild(townData);
   
-        towns[j].motto = towns[j].motto.replace('.', '. <br />');
-        let cityCard = document.createElement('div');
+        tname.innerHTML = town.name;
+        townData.appendChild(tname);
   
-        cityCard.classList.add('city');
+        tmotto.innerHTML = town.motto;
+        townData.appendChild(tmotto);
   
-        let fill = document.createElement('div');
+        founded.innerHTML = "Year Founded: " + town.yearFounded;
+        townData.appendChild(founded);
   
-        let h2 = document.createElement('h2');
-        let p = document.createElement('p');
-        let i = document.createElement('i');
-        let ul = document.createElement('ul');
-        let yearFounded = document.createElement('li');
-        let population = document.createElement('li');
-        let rainFall = document.createElement('li');
-        let img = document.createElement('img');
+        population.innerHTML = "Population: " + town.currentPopulation;
+        townData.appendChild(population);
   
-        h2.textContent = towns[j].name;
-        i.innerHTML = towns[j].motto;
-        p.appendChild(i);
-        yearFounded.textContent = `Year Founded: ${towns[j].yearFounded}`;
-        population.textContent = `Population: ${towns[j].currentPopulation}`;
-        rainFall.textContent = `Annual Rain Fall: ${towns[j].averageRainfall}`;
-        ul.appendChild(yearFounded);
-        ul.appendChild(population);
-        ul.appendChild(rainFall);
+        rainfall.innerHTML = "Annual Rain Fall: " + town.averageRainfall;
+        townData.appendChild(rainfall);
   
-        img.setAttribute('src', `images/${towns[j].photo}`);
-        img.setAttribute('alt', towns[j].name);
+        image.setAttribute("src", "images/" + town.photo);
+        image.setAttribute("alt", town.name + ": " + town.motto);
+        eachTown.appendChild(image);
   
-        fill.appendChild(h2);
-        fill.appendChild(p);
-        fill.appendChild(ul);
-        cityCard.appendChild(fill);
-        cityCard.appendChild(img);
-  
-        document.getElementById('cities').appendChild(cityCard);
-      }
+        document.querySelector("section.towndetails").appendChild(eachTown);
+        eachTown.setAttribute("class", "townArticles");
+        townData.setAttribute("class", "townSections");
+      });
     });
+  
   

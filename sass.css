@@ -1,0 +1,111 @@
+/* Define standard variables and values for website */
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$myColor: red;
+
+h1 {
+  $myColor: green;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Nested Rules */
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+/*Notice that in Sass, the ul, li, and a selectors are nested inside the nav selector.
+While in CSS, the rules are definied one by one (not nested): 
+
+CSS Syntax*/
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/*Nesting properties in Sass helps it to be cleaner and easier to read than standard CSS.*/
+
+
+SCSS Syntax:
+font: {
+  family: Helvetica, sans-serif;
+  size: 18px;
+  weight: bold;
+}
+text: {
+  align: center;
+  transform: lowercase;
+  overflow: hidden;
+}
+
+CSS Output:
+font-family: Helvetica, sans-serif;
+font-size: 18px;
+font-weight: bold;
+
+text-align: center;
+text-transform: lowercase;
+text-overflow: hidden;
