@@ -1,0 +1,129 @@
+
+header,
+nav,
+main,
+footer {
+	max-width: 900px;
+	margin: 0 auto;
+}
+nav {
+	background-color: #586994;
+	text-align: center;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: #586994;
+	background-color: #B9D8C2;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+footer {
+  background-color: #586994;
+  font-size: .8em;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.title {
+  font-family: 'Bree Serif', serif;
+}
+.font2 {
+  font-family: 'Arimo', sans-serif;
+}
+header {
+  background-color:#a26f3588;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+header img {
+  width: 80px;
+  height: auto;
+}
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.slogan {
+	font-family: Arimo, sans-serif;
+	letter-spacing: 1pt;
+	margin-left: 20px;
+	font-size: 1rem;
+}
+.responsive li {
+	display: block;
+}
+.boxes {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-width: 1px;
+  border-style: dashed;
+  text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+	/* Horizontal Menu Examples */
+	/* Flex *********************/
+  .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}  
+  
+  nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+  
+    nav a {
+      font-size: 1rem;
+    }
+    
+  /* Desktop Views ****************************/
+  @media only screen and (min-width: 60em) {
+    nav a {
+      font-size: 1.1rem;
+    }
+    
+  
