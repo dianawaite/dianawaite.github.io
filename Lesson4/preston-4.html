@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <script type="javascript" src="js/script.js"></script>
 
 </head>
 <body>
@@ -20,14 +19,14 @@
   </header>
   <nav>
     <ul class="navigation">
-        <li><a class="ham" onclick="toggleMenu" href="#">&#9776; Menu</a></li>
+        <li><a class="ham" href="#" onclick="toggleMenu()" >&#9776; Menu</a></li>
       <li><a href="">Home</a></li>
       <li><a href="">Preston</a></li>
       <li><a href="">Soda Springs</a></li>
       <li><a href="">Fish Haven</a></li>
       <li><a href="">Storm Center</a></li>
       <li><a href="">Gallery</a></li>
-      <ul class="navigation responsive"></ul>
+      <!-- <ul class="navigation responsive"></ul> -->
     </ul>
   </nav>
   <main>
@@ -44,5 +43,7 @@
         document.getElementById("last").innerHTML = document.lastModified;
       </script>
   </footer>
+  <script type="javascript" src="js/script.js"></script>
+
 </body>
 </html>

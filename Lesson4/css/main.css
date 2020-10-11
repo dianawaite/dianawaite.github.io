@@ -58,7 +58,7 @@ footer {
   font-family: 'Arimo', sans-serif;
 }
 header {
-  background-color:#a26f3588;
+  /* background-color:#a26f3588; */
   padding: 5px 0;
   display: flex;
   align-items: center;
@@ -103,7 +103,7 @@ header img {
 	}
 	.navigation li {
 		display: block; /* change state in small view */
-		flex: 1 1 auto;
+		flex: 1 1 100%;
 	}
 	.navigation a {
 		text-align: center;
