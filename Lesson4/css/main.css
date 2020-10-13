@@ -111,14 +111,15 @@ header img {
 	.navigation li:first-child {
 		display: none;
 	}
-}  
   
-  nav ul { display: flex; }
+  	nav ul { display: flex; }
 		nav ul li { flex: 1 1 100%; }
   
     nav a {
       font-size: 1rem;
-    }
+	}
+}  
+
     
   /* Desktop Views ****************************/
   @media only screen and (min-width: 60em) {
