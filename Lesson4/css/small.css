@@ -51,6 +51,10 @@ footer {
     color: white;
     padding: 10px;
 }
+footer a:visited { 
+    color: white
+}
+
 
 /* header */
 header {

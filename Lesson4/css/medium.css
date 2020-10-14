@@ -12,7 +12,7 @@
     .navigation li:first-child {
         display: none;
     }
-    nav ul {
+    /* nav ul { 
         display: flex;
     }
     nav a {
