@@ -36,6 +36,9 @@ footer {
   text-align: center;
   padding: 20px;
 }
+footer a:visited { 
+  color: white
+}
 
 p {  
   color: white;
