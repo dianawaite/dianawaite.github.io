@@ -1,5 +1,5 @@
 main {
-    background-image: linear-gradient(45deg,gray,white);
+    background-image: linear-gradient(45deg,rgb(166, 206, 183),white);
     background-attachment: fixed;
     font-family: sans-serif;
     display: grid;
@@ -8,7 +8,7 @@ main {
     grid-auto-rows: 400px;
     justify-items: center;
     align-items: center;
-    grid-gap: 50px;
+    grid-gap: 30px;
 }
 picture img {
     object-fit: cover;
