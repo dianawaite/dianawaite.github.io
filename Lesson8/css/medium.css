@@ -1,0 +1,66 @@
+@media only screen and (min-width: 37.5em) {
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  /* article image */
+  .articleImg {
+    width: 30%;
+    float: right;
+  }
+  .weatherSum {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 5-day forecast */
+  .forecast {
+    display: flex;
+    flex-flow: row;
+    padding: 20px;
+    padding-top: 0px;
+  }
+  .weatherIcon {
+    height: 50px;
+  }
+  .flex-col {
+    flex: 1 1 auto;
+    background-color: rgb(146, 182, 199);
+  }
+  .flex-col,
+  .column-col,
+  .grid-col {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    text-align: center;
+  }
+  .flex,
+  .column,
+  .grid {
+    border-right: 1px solid #333;
+  }
+  .temperature {
+    font-size: 1.5em;
+    font-family: "Arimo", sans-serif;
+  }
+  h3 {
+    font-family: "Arimo", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+}
