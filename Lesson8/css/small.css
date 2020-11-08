@@ -286,7 +286,7 @@ form label, form input, form select, form textarea {
     display: block;
     width: 100%;
 }
-form input {
+ form input { 
     margin-top: 5px;
     width: calc(100% - 0.75rem * 2);
     padding: 0.75rem;
@@ -296,11 +296,10 @@ form input[type="range"] {
     padding: 0;
 }
 form input[type="radio"] {
-    width: 25%;
+    width: auto;
     padding: 0px;
-    float: left;
-    clear: none;
-    margin: 2px 0 0 2px;
+    margin: 2px 5px 0 2px;
+    display: inline;
 }
 form select {
     margin-top: 5px;
