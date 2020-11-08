@@ -235,3 +235,91 @@ figcaption {
         opacity: 1;
     }
 }
+
+/* storm center form styles */
+
+form {
+    padding: 1rem;
+    max-width: 600px;
+}
+fieldset {
+    border: solid 2px black;
+    border-radius: 5px;
+    margin-bottom: 1.25rem;
+}
+fieldset legend {
+    padding: 0.25rem;
+    font-family: Arimo, sans-serif;
+}
+form label {
+    font-size: 0.8em;
+    font-family: Arimo, sans-serif;
+}
+form div label {
+    font-size: 1rem;
+}
+form label, form div {
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+.storm-text {
+    font-size: 1.5em;
+    font-family: Arimo, sans-serif;
+}
+div label {
+    margin-top: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-family: Arimo, sans-serif;
+}
+div input + label {
+    padding-top: 0;
+}
+form input:not([type="range"]), form select, form textarea {
+    box-shadow: 0 0 0 7px transparent;
+    transition: box-shadow 0.3s;
+}
+form input:not([type="range"]):not([type="radio"]):focus, form select:focus, form textarea:focus {
+    box-shadow: 0 0 0 4px var(--main-color);
+}
+form label, form input, form select, form textarea {
+    display: block;
+    width: 100%;
+}
+form input {
+    margin-top: 5px;
+    width: calc(100% - 0.75rem * 2);
+    padding: 0.75rem;
+}
+form input[type="range"] {
+    width: 100%;
+    padding: 0;
+}
+form input[type="radio"] {
+    width: 30%;
+    padding: 0;
+}
+form select {
+    margin-top: 5px;
+    padding: 0.75rem;
+}
+form input, form select, form textarea {
+    background-color: #b9d8c244;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+ form input[type="submit"] { 
+    background-color: #5869945d;
+    color: var(--default-light);
+    width: 100%;
+    margin-top: 10px;
+}
+form textarea {
+    width: calc(100% - 5px);
+    height: 4em;
+    margin-top: 5px;
+}
+.storm-button {
+    font-family: Arimo, sans-serif;
+    font-size: 1.2rem;
+}
