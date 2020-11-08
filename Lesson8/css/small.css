@@ -296,8 +296,11 @@ form input[type="range"] {
     padding: 0;
 }
 form input[type="radio"] {
-    width: 30%;
-    padding: 0;
+    width: 25%;
+    padding: 0px;
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
 }
 form select {
     margin-top: 5px;
@@ -310,13 +313,12 @@ form input, form select, form textarea {
 }
  form input[type="submit"] { 
     background-color: #5869945d;
-    color: var(--default-light);
     width: 100%;
     margin-top: 10px;
 }
 form textarea {
     width: calc(100% - 5px);
-    height: 4em;
+    height: 6em;
     margin-top: 5px;
 }
 .storm-button {
