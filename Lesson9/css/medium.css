@@ -1,7 +1,18 @@
-@media only screen and (min-width: 60em) {
-  nav a {
-    font-size: 1.1rem;
+@media only screen and (min-width: 37.5em) {
+  .navigation {
+    display: flex;
   }
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
   /* article image */
   .articleImg {
     width: 30%;
@@ -52,7 +63,4 @@
     display: flex;
     flex-direction: row;
   }
-  form {
-    max-width: 800px;
-}
 }

@@ -52,7 +52,4 @@
     display: flex;
     flex-direction: row;
   }
-  form {
-    max-width: 800px;
-}
 }

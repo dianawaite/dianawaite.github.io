@@ -197,15 +197,9 @@ h4 {
 }
 /* lazy load css */
 .gallery {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-auto-rows: (auto-fill, minmax(100px, auto)); */
-    /* grid-column: 1 / -1; */
-    overflow: auto;
-    resize: horizontal;
-    justify-items: center;
-    align-items: center;
     justify-items: center;
     align-items: center;
     grid-gap: 2em;
@@ -213,25 +207,11 @@ h4 {
 figure img {
     object-fit: cover;
     object-position: center;
-    box-shadow: 2px 2px 4px #2f2f2f;
-}
-figure img.in {
-    animation: img-come-in 1s;
+    /* box-shadow: 2px 2px 6px #2f2f2f; */
 }
 figcaption {
     text-align: center;
+    background-color: #5869945b;
+    padding: 1em;
 }
-
-
-
-
-@keyframes img-come-in {
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
+figure:hover {box-shadow: 0 0 50px #333;}

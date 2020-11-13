@@ -36,52 +36,96 @@
       </ul>
     </nav>
     <main>
-      <div><h2 class="cityName">Storm Tracker</h2>
-      <p class="storm-text">Let us know what the weather is like right now where you are.</p>
+      <div>
+        <h2 class="cityName">Storm Tracker</h2>
+        <p class="storm-text">
+          Let us know what the weather is like right now where you are.
+        </p>
       </div>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
-        <label class="top">Full Name*<input type="text" name="fullname" pattern="(\w\w+)\s(\w+)$" title="5 or more characters" required></label>
-        <label class="top">Email<input type="email" id="email" name="email" placeholder="john.doe@gmail.com"></label>
-        <label class="top">Phone Number*<input type="tel" required></label>
-        <label class="top">Zip Code*<input type="number" required></label>
+          <label class="top"
+            >Full Name*<input
+              type="text"
+              name="fullname"
+              pattern="(\w\w+)\s(\w+)$"
+              title="5 or more characters"
+              required
+          /></label>
+          <label class="top"
+            >Email<input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john.doe@gmail.com"
+          /></label>
+          <label class="top">Phone Number*<input type="tel" required /></label>
+          <label class="top">Zip Code*<input type="number" required /></label>
         </fieldset>
         <fieldset>
-        <legend>Storm Information</legend>
-        <label class="top">Storm Date<input type="date" id="stormdate" name="stormdate"></label>
-        <label class="top">Storm Type<input list="stormtypes" name="stormtype" id="stormtype"></label>
-        <datalist id="stormtypes">
-          <option value="Flash Flood"></option>
-          <option value="Hail"></option>
-          <option value="Hurricane"></option>
-          <option value="Thunderstorm"></option>
-          <option value="Tornado"></option>
-        </datalist>
-        <label class="top">Storm Severity (between 1-10)</label><input type="range" id="stormseverity" name="stormSeverity" min="1" max="10">
-        <label class="top">Storm Region<select id="region" name="region">
-          <option value="">Please Select:</option>
-          <option value="Preston">Preston</option>
-          <option value="Soda Springs">Soda Springs</option>
-          <option value="Fish Haven">Fish Haven</option></select></label>
-        <label class="sbs">User In Danger
-          <div><input type="radio" name="radio" value="yes"> Yes</div>
-          <div><input type="radio" name="radio" value="maybe"> Maybe</div>
-          <div><input type="radio" name="radio" value="no"> No</div></label>
-      </fieldset>
-      <fieldset>
-        <legend>Additional Details</legend>
-        <label class="top">Additional Information/Comments<input type="textarea" name="AdditionalInfo"></label> </fieldset>
-        <label class="submitBtn"><input type="submit" value="Report Your Storm"></label>
-     
+          <legend>Storm Information</legend>
+          <label class="top"
+            >Storm Date<input type="date" id="stormdate" name="stormdate"
+          /></label>
+          <label class="top"
+            >Storm Type<input list="stormtypes" name="stormtype" id="stormtype"
+          /></label>
+          <datalist id="stormtypes">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+          <label class="top">Storm Severity
+            <span id="severity"> 2</span><br /><input
+              type="range"
+              id="severe"
+              value="2"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+          </label>
+
+          <label class="top"
+            >Storm Region<select id="region" name="region">
+              <option value="">Please Select:</option>
+              <option value="Preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+              <option value="Fish Haven">Fish Haven</option>
+            </select></label
+          >
+          <label class="sbs">User In Danger</label>
+          <label><input type="radio" name="radio" value="yes" /> Yes</label>
+          <label><input type="radio" name="radio" value="maybe" /> Maybe</label>
+          <label><input type="radio" name="radio" value="no" /> No</label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Details</legend>
+          <label class="top"
+            >Additional Information & Comments
+            <br />
+            <textarea id="addinfo" name="addinfo" rows="5" cols="35"></textarea>
+          </label>
+        </fieldset>
+        <!-- <input type="textarea" name="AdditionalInfo"></label> </fieldset> -->
+        <label class="submitBtn"
+          ><input type="submit" value="Report Your Storm"
+        /></label>
       </form>
 
-
-
-        <div class="contactInfo">
-          <h3>Contact Information</h3>
-          <p>Address: 30 W Main St, Preston ID 84609<br> Phone: 208-524-9876<br>Email: info@morethanpotatoes.com</p>
-        </div>
+      <div class="contactInfo">
+        <h3>Contact Information</h3>
+        <p>
+          Address: 30 W Main St, Preston ID 84609<br />
+          Phone: 208-524-9876<br />Email: info@morethanpotatoes.com
+        </p>
+      </div>
     </main>
     <footer>
       <p>
@@ -94,6 +138,5 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/lazyloadscript.js"></script>
-
   </body>
 </html>

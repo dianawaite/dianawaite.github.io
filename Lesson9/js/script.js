@@ -28,6 +28,3 @@ if (currDay == 5) {
     document.getElementById("notice").style.display = "block";
 }
 
-function adjustRating (severity) {
-    document.getElementById("severity").innerHTML = severity;
-}
