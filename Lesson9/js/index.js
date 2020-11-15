@@ -18,13 +18,13 @@ fetch(requestURL)
       let averageRainfall = document.createElement("p");
       let image = document.createElement("img");
 
-      name.textContent = myTowns.name;
-      motto.textContent = myTowns.motto;
-      yearFounded.textContent = "Year Founded: " + myTowns.yearFounded;
-      currentPopulation.textContent = "Population: " + myTowns.currentPopulation;
-      averageRainfall.textContent = "Average Rainfall: " + myTowns.averageRainfall;
-      image.setAttribute("src", myTowns.imageurl);
-      image.setAttribute("alt", (myTowns.name));
+      name.textContent = town.name;
+      motto.textContent = town.motto;
+      yearFounded.textContent = "Year Founded: " + town.yearFounded;
+      currentPopulation.textContent = "Population: " + town.currentPopulation;
+      averageRainfall.textContent = "Average Rainfall: " + town.averageRainfall;
+      image.src = "images/" + town.photo;
+      image.alt = town.name;
 
 
       card.appendChild(name);

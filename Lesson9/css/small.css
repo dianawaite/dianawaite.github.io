@@ -349,3 +349,12 @@ img.cards {
 .homeHero {
     width: 100%;
 }
+.homeArticle {
+    border: 4px solid black;
+    margin: 10px;
+}
+.articleImg {
+    border: 1px solid black;
+    box-shadow: 0 0 10px 5px rgb(85, 84, 84);
+    margin: 0 0 0 10px;
+}
