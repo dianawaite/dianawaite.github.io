@@ -324,3 +324,28 @@ form textarea {
     font-family: Arimo, sans-serif;
     font-size: 1.2rem;
 }
+
+/* Home page grid boxes */
+div.cards {
+    padding: 1em;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #A27035;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+.card {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: lightgray;
+}
+img.cards {
+    margin: auto;
+    width: 100%;
+}
+.homeHero {
+    width: 100%;
+}
