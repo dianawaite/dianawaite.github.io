@@ -49,7 +49,7 @@ nav ul li a {
 #notice {
     display: none;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arimo, sans-serif;
     background-color: #A27035;
     color: white;
     padding: 1rem;
@@ -93,7 +93,7 @@ header img {
     font-family: Arimo, sans-serif;
     letter-spacing: 1pt;
     margin-left: 20px;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
 }
 
 /* body */
@@ -109,7 +109,7 @@ p {
 }
 /* article */
 .articleImg {
-	width: 100%;
+    width: 100%;
 }
 article {
 	padding: 15px;
@@ -123,13 +123,15 @@ article {
 }
 .map {
 	padding: 15px;
-    vertical-align: center;
-    align: center;
+    text-align: center;
+    width: auto;
 }
 .contactInfo {
-	padding: 85px;
+    flex-grow: 2;
+    padding: 85px;
     text-align: center;
     vertical-align: center;
+    background: #a26f3556;
 }
 
 /* 5-day forecast */
@@ -152,48 +154,21 @@ article {
     margin: 0 1rem;
     
 }
-/* .forecast { */
-    /* display: none; */
 
-
-/* .forecast { 
-	display: flex;
-	flex-flow: row;
-	padding: 20px;
-	padding-top: 0px;
-}
-.weatherIcon {
-    height: 50px;
-}
-.flex-col {
-	flex: 1 1 auto;
-	background-color: rgb(146, 182, 199);
-}
-.flex-col, .column-col, .grid-col {
-	border-bottom: 1px solid #333;
-	border-left: 1px solid #333;
-	border-top: 1px solid #333;
-	text-align: center;
-}
-.flex, .column, .grid {
-	border-right: 1px solid #333;
-}
-.temperature {
-	font-size: 1.5em;
-	font-family: 'Arimo', sans-serif;
-}
 h3 {
     font-family: "Arimo", sans-serif;
     text-align: center;
     font-size: 2rem;
-} */
+  }
+
 /* Hero Image and Weather Summary */
 .hero {
 	width: 100%;
 }
 h2 {text-align: center;
 	font-size:2.5rem;
-    text-shadow:3px 3px 5px #777;
+    text-shadow:2px 2px 4px #777;
+    font-family: 'Bree Serif', serif;
 }
 .heroImg {
     width: 100%
@@ -219,39 +194,12 @@ h4 {
 .weatherTable {
     text-align: right;
 }
-/* weather summary table 
-.weather-summary {
-    position: static;    
-}
-
-.heroDiv {
-    position: static;    
-    background: #f2f5dec7;
-}
-
-.weatherSum {
-    margin: 1em 2em;     
-    padding-bottom: 1em;       
-}
-
-.weatherSum tr td:nth-child(odd){
-    font-size: 1.25em;
-    text-align: right;
-    padding: 0.25em;
-}
-
-.weatherSum tr td:nth-child(even){
-    font-size: 1.1em;
-}*/
-
 
 /* lazy load css */
 .gallery {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arimo, sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* overflow: auto; */
-    /* resize: horizontal; */
     justify-items: center;
     align-items: center;
     grid-gap: 2em;
@@ -285,7 +233,8 @@ figure:hover {box-shadow: 0 0 50px #333;}
 
 form {
     padding: 1rem;
-    max-width: 600px;
+    max-width: 700px;
+    margin-left: 20px;
 }
 fieldset {
     border: solid 2px black;
@@ -310,6 +259,7 @@ form label, form div {
 .storm-text {
     font-size: 1.5em;
     font-family: Arimo, sans-serif;
+    margin: 20px;
 }
 div label {
     margin-top: 0;
@@ -400,7 +350,7 @@ h5 {
     width: 100%;
 }
 .homeArticle {
-    background-color: #a26f3556;
+    background-color: #B9D8C2;
     margin: 10px;
     width: auto;
 }
@@ -408,4 +358,16 @@ h5 {
     border: 1px solid black;
     box-shadow: 0 0 10px 5px rgb(85, 84, 84);
     margin: 0 0 0 10px;
+}
+
+.eventCSS {
+    text-align-last: left;
+    background: #B9D8C2;
+    margin: 10px;
+    padding: 10px;
+}
+.eventCSS p {
+padding: 5px;
+margin: 5px;
+
 }

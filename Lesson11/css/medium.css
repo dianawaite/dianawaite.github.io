@@ -30,8 +30,8 @@
     padding: 20px;
     padding-top: 0px;
   }
-  .weatherIcon {
-    height: 50px;
+  #five-day-flex img {
+    width: auto;
   }
   .flex-col {
     flex: 1 1 auto;
@@ -64,7 +64,7 @@
     flex-direction: column;
   }
   .map {
-    width: 300;
+    width: 300px;
   }
   
 /* Home page town info alternating grid */
@@ -74,16 +74,17 @@ div.cards {
   width: auto;
 }
 
-div.cards:nth-child(odd) img {
+div.cards:nth-child(odd) .img {
 	grid-column: 2;
 }
 
 div.cards:nth-child(odd) .data {
 	grid-column: 1;
-	grid-row: 1;
 }
 
 img {width: 100%; height: auto;padding:0;}
 .data {background-color:#000; color:#fff;}
 p {padding: .75rem;}
 }
+
+

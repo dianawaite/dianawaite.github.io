@@ -8,6 +8,8 @@
       name="discription"
       content="Soda Springs Idaho is the home to the soda geyser that people come from all over to see. See current weather and activities for Soda Springs."
     />
+    <link rel="shortcut icon" href="images/icon_ff.ico">
+
     <title>More Than Potatoes | Soda Springs Idaho</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&display=swap"
@@ -43,8 +45,6 @@
       <h2 class="cityName">Soda Springs, Idaho</h2>
       <div class="heroDiv">
         <picture>
-          <!-- <source srcset="images/wdd230_image_franklin-medium.jpg" media="(min-width: 500px) and (max-width: 799px)"> -->
-          <!-- <source srcset="images/wdd230_image_franklin-Large.jpg" media="(min-width: 800px)"> -->
           <img
             src="images/Bear_Lake-hero.jpg"
             alt="responsive images"
@@ -106,18 +106,11 @@
           necessitatibus. Non?
         </p>
       </article>
+      <div class="eventPlanner"></div>
+
       <div class="contact">
         <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1606686579365!5m2!1sen!2sus"
-            width="300"
-            height="300"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+          <img src="images/soda-springs-map.png" alt="Soda Springs Map">
         </div>
         <div class="contactInfo">
           <h3>Contact Information</h3>
@@ -129,15 +122,15 @@
       </div>
     </main>
     <footer>
-      <p>
-        &copy; <span id="currYear"></span> | Diana Waite |
-        <a href="" target="_blank">Attributes</a> <br /><span
-          id="lastUpdated"
-          class="lastUpdated"
-        ></span>
-      </p>
+        <p>
+            &copy; <span id="currYear"></span> | Diana Waite |
+            <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a> <br /><span
+              id="lastUpdated"
+              class="lastUpdated"
+            ></span>
+          </p>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/weatherInfo.js"></script>
+    <script src="js/weathersodasprings.js"></script>
   </body>
 </html>
