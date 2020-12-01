@@ -61,14 +61,17 @@
   }
   .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .map {
+    width: 300;
   }
   
 /* Home page town info alternating grid */
 div.cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  width: auto;
 }
 
 div.cards:nth-child(odd) img {

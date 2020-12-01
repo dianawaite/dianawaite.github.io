@@ -18,7 +18,7 @@ let day = days[lastUpdate.getDay()];
 let date = lastUpdate.getDate();
 let month = months[lastUpdate.getMonth()];
 let year = lastUpdate.getFullYear();         
-let lastUpdatedTxt = "Last Updated: " + day + ", " + date + " " + month + " " + year + ".";
+let lastUpdatedTxt = day + ", " + date + " " + month + " " + year;
 
 document.getElementById('currYear').textContent = currYear;
 document.getElementById('lastUpdated').innerHTML = lastUpdatedTxt;

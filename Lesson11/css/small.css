@@ -37,7 +37,7 @@ nav ul li a {
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.35rem;
 }
 .responsive li {
     display: block;
@@ -58,7 +58,7 @@ nav ul li a {
 /* footer */
 footer {
     background-color: #586994;
-    font-size: .8em;
+    font-size: 1em;
     text-align: center;
     color: white;
     padding: 10px;
@@ -84,7 +84,7 @@ header img {
     flex-direction: column;
 }
 .headings h1 {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     margin: 0 0 0 17px;
     font-family: 'Bree Serif', serif;
 
@@ -93,14 +93,18 @@ header img {
     font-family: Arimo, sans-serif;
     letter-spacing: 1pt;
     margin-left: 20px;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 /* body */
+p {
+    font-family: Arimo, sans-serif;
+    font-size: 1.1em;
+}
 /* City Name */
 .cityName {
 	text-align: center;
-	font-size: 2em;
+	font-size: 2.25em;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* article */
@@ -113,13 +117,14 @@ article {
 
 /* contact info */
 .contact {
-	/* display: flex; */
-	flex-direction: row;
+	display: flex; 
+	flex-direction: column;
 	background-color: #a26f358e;
 }
 .map {
 	padding: 15px;
-	vertical-align: center;
+    vertical-align: center;
+    align: center;
 }
 .contactInfo {
 	padding: 85px;
@@ -209,7 +214,7 @@ h2 {text-align: center;
 }
 h4 {
     font-family: "Impact", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .weatherTable {
     text-align: right;
@@ -242,15 +247,11 @@ h4 {
 
 /* lazy load css */
 .gallery {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-auto-rows: (auto-fill, minmax(100px, auto)); */
-    /* grid-column: 1 / -1; */
-    overflow: auto;
-    resize: horizontal;
-    justify-items: center;
-    align-items: center;
+    /* overflow: auto; */
+    /* resize: horizontal; */
     justify-items: center;
     align-items: center;
     grid-gap: 2em;
@@ -258,14 +259,13 @@ h4 {
 figure img {
     object-fit: cover;
     object-position: center;
-    box-shadow: 2px 2px 4px #2f2f2f;
-}
-figure img.in {
-    animation: img-come-in 1s;
 }
 figcaption {
     text-align: center;
+    background-color: #5869945b;
+    padding: 1em;
 }
+figure:hover {box-shadow: 0 0 50px #333;}
 
 
 
@@ -391,12 +391,18 @@ img.cards {
     margin: auto;
     width: 100%;
 }
+h5 {
+    font-style: italic;
+    font-size: 1.1em;
+  }
+
 .homeHero {
     width: 100%;
 }
 .homeArticle {
-    border: 4px solid black;
+    background-color: #a26f3556;
     margin: 10px;
+    width: auto;
 }
 .articleImg {
     border: 1px solid black;
