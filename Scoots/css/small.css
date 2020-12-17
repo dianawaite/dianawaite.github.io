@@ -1,0 +1,270 @@
+/* font-family: 'Freckle Face', cursive; */
+/* font-family: 'Londrina Solid', cursive; */
+/* font-family: 'Titillium Web', sans-serif; */
+
+/* navigation info */
+nav {
+    background-color: #E3B505;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.navigation a:hover {
+    color: #8EA604;
+    background-color: #306B34;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1.35rem;
+}
+.responsive li {
+    display: block;
+}
+.active {
+    text-decoration: underline;
+}
+/* header */
+header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    width: 300px;
+    height: auto;
+}
+h1 {
+    font-family: 'Londrina Solid', cursive;
+    color: #306B34;
+    font-size: 3em;
+}
+.slogan {
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 1em;
+}
+
+/* Hero Image  */
+.hero {
+    width: 1200px;
+    max-width: 100%;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.reserveBtn {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    background-color: #084C61;
+    padding: 1em;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: "Londrina Solid", cursive;
+    font-size: 2.6em
+}
+h3 {
+    font-family: "Londrina Solid", cursive;
+    font-size: 2em
+}
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+main {
+    margin: 2em;
+}
+.homeInfo {
+    padding: 2em;
+    background: #E3B505;
+}
+.types {
+    display: flex;
+    flex-direction: column;
+    background: #8EA604;
+    padding: 2em;
+    border: 1px #306B34;
+    text-align: center;
+}
+.typesImg {
+    margin: 1em;
+    max-width: 80%;
+    min-width: 100px;
+    border-radius: 6%;
+}
+.locations {
+    display: flex;
+    flex-grow: auto;
+    flex-direction: column;
+    background: #084C61;
+    padding: 1em;
+    color: white;
+    margin-top: 15px;
+}
+.location1 {
+    margin: 2em;
+}
+.location2 {
+    margin: 2em;
+}
+footer {
+    padding: .5em;
+    background-color: #e3b70548;
+    text-align: center;
+}
+
+/* reservations form */
+.reservations {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: 'Titillium Web', sans-serif;
+}
+.top {
+    padding: .5em;
+}
+div label {
+    padding-top: .75em;
+    padding-bottom: .75em;
+}
+form input {
+    padding: 0.75rem;
+    width: calc(100% - 0.75rem * 2);
+}
+form input, form select, form textarea {
+    background-color: #b9d8c244;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+form textarea {
+    width: calc(100% - 0.75rem * 2);
+    padding: 0.75rem;
+}
+
+/* Tours page */
+.tours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+.tourInfo {
+    padding: 10px;
+    border: solid 1px black;
+
+}
+.tourImg {
+    justify-content: center;
+
+}
+
+/* Contact Form */
+.contactForm {
+    max-width: 700px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.contactImg {
+    float: right;
+}
+/* social icons*/
+.social {
+    width: 30px;
+    max-width: 50px;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.socialImg {
+    padding: 10px;
+    width: 60px;
+}
+table {
+    float: right;
+    border: solid 1px black;
+    border-spacing: .2em;
+    text-align: left;
+    padding: .5em;
+    background: #d2d2d2;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.tableData {
+    background: white;
+}
+
+.rentalInfo {
+    font-family: 'Titillium Web', sans-serif;
+}
+.homeRentals {
+    margin: 1.5em;
+}
+
+.weatherSum {
+    float: right;
+    margin: 2em;
+    padding: 1em;
+}
+.forecast-box {
+    float: right;
+}
+
+
+@media only screen and (min-width: 37.5em) {
+    .navigation {
+      display: flex;
+    }
+    .navigation li {
+      display: block;
+      flex: 1 1 100%;
+    }
+    .navigation a {
+      text-align: center;
+    }
+    .navigation li:first-child {
+      display: none;
+    }
+    .locations {
+        flex-direction: row;
+    }
+
+    .types {
+       flex-direction: row;
+    }
+    .tours {
+        flex-direction: row;
+    }
+}
